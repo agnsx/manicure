@@ -1,0 +1,961 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Manicure</title>
+    <!-- Boostrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Style Css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white shadow py-3 sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="./assets/img/logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#heroSlider">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation">Reservation</a>
+                    </li>
+
+                </ul>
+                <a href="#" class="btn btn-brand">Ordem de pedido</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Slider -->
+    <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item text-center bg-cover vh-100 active slide-1">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h1 class="display-1 my-3 fw-bold text-white">Unhas personalizadas</h1>
+                            <a href="#" class="btn btn-brand">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item text-center bg-cover vh-100 slide-2">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h1 class="display-1 my-3 fw-bold text-white">Esmaltação em Gel</h1>
+                            <a href="#" class="btn btn-brand">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="carousel-item text-center bg-cover vh-100 slide-3">
+                    <div class="container h-100 d-flex align-items-center justify-content-center">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <h1 class="display-1 my-3 fw-bold text-white">Alongamentos</h1>
+                                <a href="#" class="btn btn-brand">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="carousel-item text-center bg-cover vh-100 slide-4">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h1 class="display-1 my-3 fw-bold text-white">Pedicure</h1>
+                            <a href="#" class="btn btn-brand">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item text-center bg-cover vh-100 slide-5">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">                            
+                            <h1 class="display-1 my-3 fw-bold text-white">Manutenção</h1>
+                            <a href="#" class="btn btn-brand">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item text-center bg-cover vh-100 slide-6">
+                <div class="container h-100 d-flex align-items-center justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <h1 class="display-1 my-3 fw-bold text-white">Mãos</h1>
+                            <a href="#" class="btn btn-brand">Reservar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="row gy-4 align-items-center">
+                <div class="col-lg-5">
+                    <img src="./assets/images/about_new.png" alt="">
+                </div>
+                <div class="col-lg-5">
+                    <h1>Sobre a gente</h1>
+                    <div class="divider my-4"></div>
+                    <p>A atenção dada às unhas não deve ser só estética e a preocupação com a saúde precisa ser colocada em primeiro lugar. Aqui você encontra muitas histórias divertidas, que dão um Up tanto no seu visual quanto no seu humor.</p>
+                    <a href="#" class="btn btn-brand">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Conheça nossos serviços</h1>
+                    <p>Nosso métodos de manicure e pedicure prezam pelo conforto, saúde e segurança de nossos clientes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="nav nav-pills mb-4 justify-content-center" id="pills-tab" role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-tendencias-tab" data-bs-toggle="pill" data-bs-target="#pills-tendencias"
+                        type="button" role="tab" aria-controls="pills-tendencias" aria-selected="true">Tendências</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-novidades-tab" data-bs-toggle="pill" data-bs-target="#pills-novidades"
+                        type="button" role="tab" aria-controls="pills-novidades" aria-selected="true">Novidades</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-manicure-tab" data-bs-toggle="pill" data-bs-target="#pills-manicure"
+                        type="button" role="tab" aria-controls="pills-manicure" aria-selected="true">Manicure</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-pedicure-tab" data-bs-toggle="pill" data-bs-target="#pills-pedicure"
+                        type="button" role="tab" aria-controls="pills-pedicure" aria-selected="true">Pedicure</button>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+
+                <div class="tab-pane fade show active" id="pills-tendencias" role="tabpanel" aria-labelledby="pills-tendencias-tab"
+                    tabindex="0">
+
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/tendencias/tendencias1.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas personalizadas em vários modelos</a></h5>
+                                    <p>Procedimento feito em unhas um pouco crescidas, sob avaliação de foto.</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/tendencias/tendencias2.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas personalizadas</a></h5>
+                                    <p class="small">Para mulheres que amam cores frias e com formatos clássicos</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/tendencias/tendencias3.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas personalizadas para todas as idades</a></h5>
+                                    <p class="small">Com esmaltação e esmaltação tradicional</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/tendencias/tendencias4.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas personalizadas em acrigel</a></h5>
+                                    <p class="small">Para aquelas que desejam apostar em um visual mais moderninho para as unhas</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/tendencias/tendencias5.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas personalizadas em fibra e vidro</a></h5>
+                                    <p class="small">Com cutilagem e esmaltação tradicional</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/manicure/manicure3.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas Stiletto</a></h5>
+                                    <p class="small">Para mulheres apaixonadas no mundo da beleza</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/novidades/novidades2.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">banho em gel</a></h5>
+                                    <p class="small">Seus pés mais bonitos</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/tendencias/tendencias6.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas de gel nas tips</a></h5>
+                                    <p class="small">Para as mais discretas que vão ajudar a tirar um pouco da atenção das pontinhas dos dedos</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-pane fade show" id="pills-novidades" role="tabpanel"
+                    aria-labelledby="pills-novidades" tabindex="0">
+                    <div class="row gy-4">
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/novidades/novidades1.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Tips personalizadas</a></h5>
+                                    <p class="small">unhas personalizadas bem delicadas</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/novidades/novidades2.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">banho em gel</a></h5>
+                                    <p class="small">Seus pés mais bonitos</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/novidades/novidades3.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">esmaltação delicada para os pés</a></h5>
+                                    <p class="small">Baked salmon to a fresh salad made with chickpeas, arugula, herbs
+                                        and olives</p>
+                                        <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/novidades/novidades4.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Cores para arrasar </a></h5>
+                                    <p class="small">Já para aquelas que desejam apostar em um visual mais moderninho para as unhas</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="pills-manicure" role="tabpanel" aria-labelledby="pills-manicure-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/manicure/manicure1.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas redondas com estilo PIPE</a></h5>
+                                    <p class="small">Unhas bem discretas e personalizadas de um jeito que você nunca viu</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/manicure/manicure2.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas de fibra de vidro</a></h5>
+                                    <p class="small">Cores que se combinam e se complementam, com formatos perfeitos</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/manicure/manicure3.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas Stiletto</a></h5>
+                                    <p class="small">Para mulheres apaixonadas no mundo da beleza</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/manicure/manicure4.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Unhas em gel</a></h5>
+                                    <p class="small">Personalizados com estilos para quem deseja ousar</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade show" id="pills-pedicure" role="tabpanel" aria-labelledby="pills-pedicure-tab"
+                    tabindex="0">
+                    <div class="row gy-4">
+
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/pedicure/pedicure1.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Estilos únicos</a></h5>
+                                    <p class="small">Com um toque de decoração valoriza ainda mais as unhas.</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/pedicure/pedicure2.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Cores radiantes</a></h5>
+                                    <p class="small">Rosa para unhas do pé? Claro que sim!</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/pedicure/pedicure3.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">Francesinhas delicadas</a></h5>
+                                    <p class="small">Se você ainda tem dúvidas se as unhas francesinhas para os pés, veja esse modelo incrível e faça já nos seus pés!</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="menu-item bg-white shadow-on-hover">
+                                <img src="./assets/img/pedicure/pedicure4.jpeg" alt="">
+                                <div class="menu-item-content p-4">
+                                    <div>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                    <h5 class="mt-1 mb-2"><a href="#">design inusitados</a></h5>
+                                    <p class="small">Personalização simples e única</p>
+                                    <a href="#">Reserve agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Por que escolher a gente?</h1>
+                    <p class="text-white">Trazemos muitas novidades para vocês, lhe proporcionando facilidade de manuseio e um resultado surpreendente. </p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-wifi-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Wi-fi grátis</h4>
+                        <p class="text-white">Acesso ao Wi-fi para maior conforto as nossas clientes.</p>
+                        <br>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-timer-2-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Atendimento rápido</h4>
+                        <p class="text-white">Atendimento personalizado de acordo com os agendamentos.</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-user-5-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Satisfação</h4>
+                        <p class="text-white">Atendimento personalizado de alto nivel 24h de segunda a sábado.</p><br>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="feature p-4 text-center">
+                        <div class="feature-icon">
+                            <i class="ri-shield-star-fill"></i>
+                        </div>
+                        <h4 class="text-white mt-4 mb-2">Melhores Preços</h4>
+                        <p class="text-white">Condições especiais para você e grandes promoções!
+                        </p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Nossa Equipe</h1>
+                    <p>Nossa equipe de manicures temos várias que são amorosas, comprometidas e incríveis.
+                        Todo meu respeito por essa profissão que leva cuidado e beleza as pessoas.</p>
+                    <p>Com elas não tem frescura! Se adaptam a necessidade dos clientes e dos profissionais.</p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-4 border shadow-on-hover text-center">
+                        <img src="./assets/img/team/team1.jpeg" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Karla Dias</h4>
+                            <p class="mb-0">Manicure - especializada em personalização de mãos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/img/team/team2.jpeg" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Priscila de Souza</h4>
+                            <p class="mb-0">Manicure e pedicure - especializada em manutenção de unhas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/img/team/team3.jpeg" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Barbara Arroio</h4>
+                            <p class="mb-0">Manicure - especializada em alongamnetos de unhas</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="team-member px-4 py-5 border shadow-on-hover text-center">
+                        <img src="./assets/img/team/team4.png" alt="">
+                        <div class="team-member-content">
+                            <h4 class="mb-0 mt-4">Sarah de Lima</h4>
+                            <p class="mb-0">Pedicure - especializada em personalização de pés</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review -->
+    <section id="reviews" class="bg-cover">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1 class="text-white">Nossas Clientes</h1>
+                    <p class="text-white">Milhares de profissionais avaliados por clientes, permitindo você negociar apenas com os melhores.</p>
+                </div>
+            </div>
+
+            <div id="reviewSlider" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#reviewSlider" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                </div>
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">A experiência com o trabalho foi muito satisfatória, foi um trabalho de qualidade. Recomendo! Fui muito bem atendida, vou indicar para outras pessoas.</p>
+                                    <div class="person mt-4">
+                                        <img src="./assets/img/clientes/clientes1.jpeg" alt="">
+                                        <h4 class="mb-0 mt-2">Luana Silva</h4>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="review bg-white p-5 text-center">
+                                    <div class="quote-icon"><i class="ri-double-quotes-l"></i></div>
+                                    <p class="mb-0">Fui muito bem atendida, as profissionais são ótimas, fui atendida com rapidez, atenção e solucionaram o problema. Recomendo sempre!</p>
+                                    <div class="person mt-4">
+                                        <img src="./assets/img/clientes/clientes2.jpeg" alt="">
+                                        <h4 class="mb-0 mt-2">Ana Beatriz</h4>
+                                        <span class="stars">
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-fill"></i>
+                                            <i class="ri-star-half-fill"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewSlider" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewSlider" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Reservation -->
+    <section id="reservation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Deixe sua sugestão</h1>
+                    <p>Receba ofertas e novidades por e-mail</p>
+                </div>
+            </div>
+            <form action="#" class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="row g-3">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" placeholder="Digite seu nome">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" class="form-control" placeholder="E-mail">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <textarea name="" id="" cols="30" rows="4" class="form-control"
+                                placeholder="Mensagem"></textarea>
+                        </div>
+                        <div class="form-group text-center col-md-12">
+                            <a href="#" class="btn btn-brand">Cadastrar</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Insta Posts -->
+    <div class="row g-0">
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/img/manicure/manicure1.jpeg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/img/manicure/manicure3.jpeg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/img/pedicure/pedicure3.jpeg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6">
+            <div class="insta-post">
+                <img src="./assets/img/novidades/novidades4.jpeg" alt="">
+                <a href="#" class="insta-btn">
+                    <i class="ri-instagram-fill"></i>
+                    
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Post -->
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 intro-text">
+                    <h1>Blog Posts</h1>
+                    <p>Confira as tendências dessa semana:</p>
+                </div>
+            </div>
+            <div class="row gy-4">
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/img/slide/slide4.jpeg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>postado: 17 de agosto de 2022</p>
+                            <h4><a href="#">Abstratas</a></h4>
+                            <p>Uma das trends de 2021 foi a nail art abstrata e ela deve estar presente esse ano também. Pode soltar a criatividade e combinar diversas cores e estilos. Está liberado explorar esse estilo</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/img/slide/slide5.jpeg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>postado: 02 de junho de 2022</p>
+                            <h4><a href="#">Francesinhas diferentes </a></h4>
+                            <p>Você pode usar a base transparente com as pontas coloridas, criando combinações de cores, apenas uma cor diferente do branco ou uma base de acabamento fosco e pontas brilhantes. </p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/img/manicure/manicure3.jpeg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>postado: 22 de abril de 2022</p>
+                            <h4><a href="#">Estilos Stiletto</a></h4>
+                            <p> Para as adeptas aos alongamentos, unhas de gel, etc, podem apostar nas aplicações, design e artes de diversas maneiras, quem gosta apenas de pintar as unhas normalmente, basta um esmalte com efeito claro que já é sucesso!</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="blog-post d-flex shadow-on-hover">
+                        <img src="./assets/img/pedicure/pedicure3.jpeg" alt="">
+                        <div class="blog-post-content p-4">
+                            <p>postado: 02 de março de 2022</p>
+                            <h4><a href="#">Francesinhas tradicionais</a></h4>
+                            <p>A francesinha tradicional é atemporal, nunca sai de moda.</p>
+                            <a href="#">Leia mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-cover">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-4">
+                        <img src="./assets/img/logo.png" class="mb-4" alt="">
+                        <p>Saiba aonde nos encontrar</p>
+                        <div class="social-links">
+                            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-fill"></i></a>
+                            <a href="#"><i class="ri-youtube-fill"></i></a>
+                            <a href="#"><i class="ri-google-play-fill"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 ms-auto">
+                        <h6 class="text-white mb-4">CONTATOS</h6>
+                        <p class="mb-1"><i class="ri-whatsapp-line"></i> (92) 9283 - 4726</p>
+                        <p class="mb-1"><i class="ri-mail-open-line"></i> manicure@mill.com</p>
+                        <p class="mb-0"><i class="ri-map-pin-time-line"></i></i> 14 Paramore Street Mornington Peninsula Victoria 3552</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <h6 class="text-white mb-4">HORÁRIO DE FUNCIONAMENTO</h6>
+                        <p class="mb-1"><i class="ri-time-line"></i> Segunda a Sexta : 08:00 - 22:00</p>
+                        <p> <i class="ri-time-line"></i> Sábado e Domingo : 08:00 - 22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
